@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <style>
+        body{
+            background-color: #bb0808;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn{
+            background-color: #060e06; /* Cor de fundo do botão */
+            border: none;
+            color: rgb(250, 247, 247);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 20px; /* Define o raio de arredondamento */
+            cursor: pointer;
+        }
+        .btn1{
+            background-color: #010c01; /* Cor de fundo do botão */
+            border: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 20px; /* Define o raio de arredondamento */
+            cursor: pointer;
+        }
+    .vp{
+        color: rgb(255, 252, 252);
+    }
+    </style>
+</head>
+<body>
+    <h1 class="vp">Role hj? </h1>
+    <button onclick="window.location.href='https://youtu.be/izGwDsrQ1eQ?si=7n2AMPiJ_c8gSi8P'" class="btn">sim</button>
+    <button class="btn1" onclick="moveButton()">não</button>
+</body>
+<script>
+function moveButton() {
+    var btn = document.querySelector('.btn1');
+    var randomX = Math.floor(Math.random() * window.innerWidth);
+    var randomY = Math.floor(Math.random() * window.innerHeight);
+    btn.style.position = 'absolute';
+    btn.style.left = randomX + 'px';
+    btn.style.top = randomY + 'px';
+}
+</script>
+</html>
